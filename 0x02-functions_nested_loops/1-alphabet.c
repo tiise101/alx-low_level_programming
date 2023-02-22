@@ -1,15 +1,17 @@
-#include "main.c"
+#include "main.h"
 /**
  * main - print alphabets in lower cases
  *
  * Return: 0
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char a;
+	int start = 97,end = 122;
 
-	for (a = 'a'; a <= 'z'; la++)
-		_putchar(a);
-
+	while (start <= end)
+	{
+		_putchar(start);
+		start++;
+	}
 	_putchar('\n');
 }
